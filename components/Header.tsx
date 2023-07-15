@@ -17,14 +17,23 @@ import {
 } from '@chakra-ui/react';
 import { ReactElement } from 'react';
 import { TbLanguage, TbMoonFilled, TbSunHigh } from 'react-icons/tb';
+import theme from '../utils/Theme';
 
 const Header = () => {
 	const { toggleColorMode } = useColorMode();
-	const color: string = useColorModeValue('#f5f5f5', '#050609');
 	const darkModeIcon: ReactElement = useColorModeValue(<TbMoonFilled />, <TbSunHigh />);
 
 	return (
-		<Flex justifyContent="space-between" p={3} position="sticky" top={0} left={0} right={0} zIndex="999" bg={color}>
+		<Flex
+			justifyContent="space-between"
+			p={3}
+			position="sticky"
+			top={0}
+			left={0}
+			right={0}
+			zIndex="999"
+			bg={theme.colors}
+		>
 			<Link href="#" fontSize="xl" letterSpacing="wide">
 				<Text as="b">Caetano Almeida</Text>
 			</Link>

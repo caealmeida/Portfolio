@@ -1,7 +1,7 @@
 import { Flex, Heading, Text } from '@chakra-ui/react';
 
 const Home = () => (
-	<Flex p={2} justifyContent="center" mt={200}>
+	<Flex p={2} justifyContent="center" mt={200} mb={50}>
 		<Flex direction="column" maxW="75%">
 			<Text fontSize="5em" p={6}>
 				Fullstack

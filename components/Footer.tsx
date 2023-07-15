@@ -1,14 +1,14 @@
-import { Flex, Icon, Link, Spacer, Text, useColorModeValue } from '@chakra-ui/react';
+import { Flex, Icon, Link, Spacer, Text } from '@chakra-ui/react';
 import { TbBrandLinkedin, TbBrandGithub, TbMail } from 'react-icons/tb';
+import theme from '../utils/Theme';
 
 const Footer = () => {
 	const year = new Date().getFullYear();
-	const color: string = useColorModeValue('#f5f5f5', '#050609');
 
 	return (
-		<Flex justifyContent="center" p={3} position="static" bottom={0} left={0} right={0} bg={color}>
+		<Flex justifyContent="center" p={3} position="static" bottom={0} left={0} right={0} bg={theme.colors}>
 			<Text fontSize="sm" letterSpacing="wide">
-				caealmeida © {year}
+				caealmeida © - {year}
 			</Text>
 			<Spacer />
 			<Flex justifyContent="space-between">
