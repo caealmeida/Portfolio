@@ -22,32 +22,26 @@ import theme from '../utils/Theme';
 const Header = () => {
 	const { toggleColorMode } = useColorMode();
 	const darkModeIcon: ReactElement = useColorModeValue(<TbMoonFilled />, <TbSunHigh />);
+	const color: string = useColorModeValue(theme.colors.light, theme.colors.dark);
 
 	return (
-		<Flex
-			justifyContent="space-between"
-			p={3}
-			position="sticky"
-			top={0}
-			left={0}
-			right={0}
-			zIndex="999"
-			bg={theme.colors}
-		>
+		<Flex justifyContent="space-between" p={3} position="sticky" top={0} left={0} right={0} zIndex="999" bg={color}>
 			<Link href="#" fontSize="xl" letterSpacing="wide">
-				<Text as="b">Caetano Almeida</Text>
+				<Text letterSpacing="wide" fontSize="larger">
+					Caetano Almeida
+				</Text>
 			</Link>
-			<Breadcrumb separator="" spacing="30px" fontSize="lg">
-				<BreadcrumbItem>
-					<BreadcrumbLink href="#">Sobre</BreadcrumbLink>
-				</BreadcrumbItem>
-				<BreadcrumbItem>
-					<BreadcrumbLink href="#">Projetos</BreadcrumbLink>
-				</BreadcrumbItem>
-				<BreadcrumbItem>
-					<BreadcrumbLink href="#">Contato</BreadcrumbLink>
-				</BreadcrumbItem>
-			</Breadcrumb>
+			<Flex>
+				<Link href="#about">
+					<Text>Sobre</Text>
+				</Link>
+				<Link href="#" mx={16}>
+					<Text>Projetos</Text>
+				</Link>
+				<Link href="#">
+					<Text>Contato</Text>
+				</Link>
+			</Flex>
 			<Flex>
 				<Menu>
 					<Tooltip label="Idioma" closeDelay={250} fontSize="sm">

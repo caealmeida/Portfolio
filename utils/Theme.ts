@@ -6,7 +6,7 @@ const theme = extendTheme({
     heading: `'Inter', sans-serif`
   },
   colors: {
-    light: '#f5f5f5',
+    light: '#f0f0f0',
     dark: '#050609'
   }
 })

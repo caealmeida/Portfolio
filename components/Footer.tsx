@@ -1,12 +1,11 @@
 import { Flex, Icon, Link, Spacer, Text } from '@chakra-ui/react';
 import { TbBrandLinkedin, TbBrandGithub, TbMail } from 'react-icons/tb';
-import theme from '../utils/Theme';
 
 const Footer = () => {
 	const year = new Date().getFullYear();
 
 	return (
-		<Flex justifyContent="center" p={3} position="static" bottom={0} left={0} right={0} bg={theme.colors}>
+		<Flex justifyContent="center" p={3} position="static" bottom={0} left={0} right={0}>
 			<Text fontSize="sm" letterSpacing="wide">
 				caealmeida © - {year}
 			</Text>
