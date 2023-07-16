@@ -33,10 +33,10 @@ const Header = () => {
           <Text>Sobre</Text>
         </Link>
         <Link href='#' mx={16}>
-          <Text>Projetos</Text>
-        </Link>
-        <Link href='#'>
           <Text>Contato</Text>
+        </Link>
+        <Link href='#projects'>
+          <Text>Projetos</Text>
         </Link>
       </Flex>
       <Flex>

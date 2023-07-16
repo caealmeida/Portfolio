@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Home from '../components/Home';
 import About from '../components/About';
+import Projects from '../components/Projects';
 
 const IndexPage = () => {
   const color = useColorModeValue('blackAlpha.100', 'blackAlpha.800');
@@ -13,6 +14,7 @@ const IndexPage = () => {
         <Header />
         <Home />
         <About />
+        <Projects />
         <Divider />
         <Footer />
       </Container>

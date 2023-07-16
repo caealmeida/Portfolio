@@ -12,7 +12,7 @@ const About = () => {
   };
 
   return (
-    <Flex id='about' direction='column' justifyContent='center' p={2} mt={150} gap='25px'>
+    <Flex id='about' direction='column' justifyContent='center' p={2} mt={60} gap='25px'>
       <Flex gap='50px' direction='column'>
         <Flex gap='10px'>
           <Avatar
@@ -33,7 +33,7 @@ const About = () => {
           construir um ótimo produto e um ambiente acolhedor.
         </Text>
       </Flex>
-      <Flex direction='column' alignItems='center'>
+      <Flex direction='column' alignItems='center' mt={16}>
         <Button
           w='15%'
           m='auto'
