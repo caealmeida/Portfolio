@@ -1,8 +1,10 @@
-import { Flex, Text, Avatar, Button } from '@chakra-ui/react';
+import { Flex, Text, Avatar, Button, useColorModeValue } from '@chakra-ui/react';
 import { TbDownload } from 'react-icons/tb';
 import theme from '../public/Theme';
 
 const About = () => {
+  const color: string = useColorModeValue(theme.colors.light, theme.colors.dark);
+
   const cvDownload = () => {
     const fileUrl = './cv/Currículo.pdf';
     const link = document.createElement('a');
@@ -15,14 +17,7 @@ const About = () => {
     <Flex id='about' direction='column' justifyContent='center' p={2} maxW='85%' m='auto' mt={60}>
       <Flex direction='column'>
         <Flex>
-          <Avatar
-            size='xl'
-            name='Caetano Almeida'
-            src='./images/avatars/perfil.jpeg'
-            p={1}
-            rounded='full'
-            bg={theme.colors.detail}
-          />
+          <Avatar size='xl' name='Caetano Almeida' src='./images/avatars/perfil.jpeg' p={1} rounded='full' bg={color} />
           <Text ml={5} fontSize='5em'>
             Caetano Almeida
           </Text>
@@ -41,7 +36,7 @@ const About = () => {
           aria-label={'cv download'}
           onClick={cvDownload}
           border='1px'
-          bg={theme.colors.light}
+          // bg={theme.colors.light}
           _hover={{ bg: theme.colors.detail, color: theme.colors.light }}
           _active={{
             bg: 'red.600',
