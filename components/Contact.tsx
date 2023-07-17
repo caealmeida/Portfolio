@@ -1,4 +1,4 @@
-import { Flex, Box, Icon, Text, Link } from '@chakra-ui/react';
+import { Flex, Icon, Link } from '@chakra-ui/react';
 import theme from '../public/Theme';
 import { IconType } from 'react-icons';
 

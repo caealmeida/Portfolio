@@ -1,4 +1,4 @@
-import { Flex, Box, Spacer, Text, Link } from '@chakra-ui/react';
+import { Flex, Box, Text, Link } from '@chakra-ui/react';
 import { TbExternalLink } from 'react-icons/tb';
 import theme from '../public/Theme';
 

@@ -1,17 +1,4 @@
-import {
-  Flex,
-  Text,
-  IconButton,
-  Tooltip,
-  useColorMode,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  Img,
-  Link,
-  useColorModeValue,
-} from '@chakra-ui/react';
+import { Flex, Text, IconButton, Tooltip, useColorMode, Link, useColorModeValue } from '@chakra-ui/react';
 import { ReactElement } from 'react';
 import { TbLanguage, TbMoonFilled, TbSunHigh } from 'react-icons/tb';
 import theme from '../public/Theme';
