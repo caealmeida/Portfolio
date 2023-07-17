@@ -32,7 +32,7 @@ const Header = () => {
         <Link href='#about'>
           <Text>Sobre</Text>
         </Link>
-        <Link href='#' mx={16}>
+        <Link href='#contacts' mx={16}>
           <Text>Contato</Text>
         </Link>
         <Link href='#projects'>
@@ -40,7 +40,7 @@ const Header = () => {
         </Link>
       </Flex>
       <Flex>
-        <Menu>
+        {/* <Menu>
           <Tooltip label='Idioma' closeDelay={250} fontSize='sm'>
             <MenuButton as={IconButton} aria-label='Languages' icon={<TbLanguage />} variant='ghost' />
           </Tooltip>
@@ -52,7 +52,7 @@ const Header = () => {
               <Img src='./images/flags/united-kingdom.png' mr={2} /> English
             </MenuItem>
           </MenuList>
-        </Menu>
+        </Menu> */}
         <Tooltip label='Dark Mode' closeDelay={250} fontSize='sm'>
           <IconButton aria-label='dark-mode' variant='ghost' icon={darkModeIcon} onClick={toggleColorMode} />
         </Tooltip>

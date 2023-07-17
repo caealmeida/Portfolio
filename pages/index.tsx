@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import Home from '../components/Home';
 import About from '../components/About';
 import Projects from '../components/Projects';
+import Contacts from '../components/Contacts';
 
 const IndexPage = () => {
   const color = useColorModeValue('blackAlpha.100', 'blackAlpha.800');
@@ -14,6 +15,7 @@ const IndexPage = () => {
         <Header />
         <Home />
         <About />
+        <Contacts />
         <Projects />
         <Divider />
         <Footer />
